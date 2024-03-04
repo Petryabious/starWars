@@ -1,0 +1,20 @@
+@import "../../../.././assets/styles/variables.scss";
+
+.footer {
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+
+  border: 2px solid $yellow;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+.footer__text {
+}
