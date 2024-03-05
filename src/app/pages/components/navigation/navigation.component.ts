@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 interface Navigation {
   title: string;
@@ -10,7 +11,7 @@ interface Navigation {
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, RouterModule],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
