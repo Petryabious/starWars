@@ -1,1 +1,13 @@
-<p>planets works!</p>
+<div class="container-main">
+    <h2>Planets</h2>
+
+    @if (planets.length !== 0) {
+        <div class="container-list">
+            @for (planet of planets; track planet.name) {
+                <div class="container-list__item">{{planet.name}}</div>
+            }
+        </div>     
+    } @else{
+        <p>Oops, something went wrong</p>
+    }
+</div>

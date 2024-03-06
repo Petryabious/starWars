@@ -1,0 +1,21 @@
+.container{
+
+    &-main{
+        padding: 15px;
+    }
+
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        &__item {
+            width: 200px;
+            height: 150px;
+    
+            border: 2px solid $yellow;
+        }
+    }
+
+
+}

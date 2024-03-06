@@ -14,7 +14,7 @@ export class DataService {
     return this._httpClient.get<{[key:string]:string}>(baseUrl);
   }
 
-  public getPlanets():Observable<ResponseContainer<Planet>>{
-    return this._httpClient.get<ResponseContainer<Planet>>(`${baseUrl}planets`)
+  public getPlanets(page?: string):Observable<ResponseContainer<Planet>>{
+    return this._httpClient.get<ResponseContainer<Planet>>(`${baseUrl}planets${page ? `/?page=${page}`:''}`)
   }
 }
